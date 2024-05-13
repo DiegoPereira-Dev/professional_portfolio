@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',serif,Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: url("https://source.unsplash.com/1600x900/?landscape");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteiner{ 
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(20px); /* Boa propriedade para embasar conteineris */
+    box-shadow:5px 5px 5px 5px  rgba(0, 0, 0, 0.5);/* Bom para dar um efeito destacado */
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.conteiner h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
+    
+}
+.input-conteiner {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-conteiner input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+
+}
+.input-conteiner input::placeholder{
+    color: #fff;
+}
+.input-conteiner img {
+    position: absolute;
+    right: 24px;
+    top: 25%;
+    margin-top: 5px;
+}
+.input-conteiner a {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
+}
+.input-conteiner a:hover{
+    text-decoration: underline;
+}
+.button{
+    width: 100%;
+    height: 50px;
+    background-color: #5100b5;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-style: none;
+    margin-top: 15px;
+    outline: none;
+}
+.button:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+.register-link {
+    text-align: center;
+    margin-top: 5px;
+}
+.register-link p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+.register-link a{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
