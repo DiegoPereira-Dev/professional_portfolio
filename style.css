@@ -1,83 +1,90 @@
+/* Geral */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-
-.caixa-principal {
+body{
+    scroll-behavior: smooth 1s;
     height: 100vh;
     width: 100%;
-    /* background-image: url(./img/Avatar4-ezgif.com-video-to-gif-converter.gif); */
-    background-position: 80% 50%;
-    background-size: 500px;
-    background-repeat: no-repeat;
     background-color: #191919;
-    
 }
 
-/* fim de caixa principal */
-#navegacao .sair{
-    color: white;
-    position: absolute;
-    top: 1;
+/* Estilo do cabeçalho */
+
+.navegacao{
+    /* border-bottom: 1px solid #383636; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 40px 4%;
+    position: fixed;
+    left: 0;
     right: 0;
-    width: 70px;
-    height: 60px;
-    padding-left:20px ;
-}
-.sair a {
-    text-decoration:none;
-    color: white;
-}
-.sair:hover{
-    cursor: pointer;
-    transform: scale(0.9);
+    background-color:#191919 ;
 }
 
-#navegacao .icon {
-   width: 40px;
-   height: 30px;
-   display: flex;
-}
-#navegacao {
+header > .navegacao{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 25px;
 }
-#navegacao .elemento {
-    color: white;
-    list-style: none;
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
     display: inline-block;
-    font-size: 25px;
-    margin-right: 60px;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+    transition: 1s;
+    color: #fff;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+   cursor: pointer;
+}
+
+header .btn-contato button{
+    padding:10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    /* background-color: ; --> definir uma cor de fundo para o botão*/
+    border:0 ;
+    border-radius: 30px;
     cursor: pointer;
-
-}
-#navegacao .elemento {
-    transition: color 0.1s ease-in-out;
-    color: white;
 }
 
-#navegacao .elemento:hover {
-    color: rgb(51, 49, 49);
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #ff0000;
 }
 
-.portifolio {
-    color: white;
-    font-size: 40px;
-    font-weight: 500;
-    margin-left: 40px;
-}
-
-.portifolio span {
+.navegacao span{
     color: red;
 }
 
-/* Fim de Navegação */
+
+.navegacao li{
+    text-decoration: none;
+    list-style: none;
+    /* transition: border-bottom 1s, color 1s, margin-left 1s, margin-right 1s; */
+}
+
+
+/* fim de nevegação */
+
 .caixa-img {
     display: flex;
     justify-content: right;
@@ -100,7 +107,7 @@
     100% {
         opacity: 1;
     }
-}
+} 
 
 .meu-nome {
     position: absolute;
