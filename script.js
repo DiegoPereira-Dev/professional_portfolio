@@ -13,15 +13,17 @@ function ativaLetra(elemento) {
 }
 
 document.addEventListener("DOMContentLoaded", async function() {
-    const nomeElement = document.getElementById("nome");
+    const nomeElement = document.querySelector(".nome");
     const sobrenomeElement = document.querySelector('.pereira');
-    const complemento = document.querySelector('.digitando2'); 
+    const complemento = document.querySelector('.animation_2'); 
+    const button = document.querySelector('.btn-topo-do-site'); 
 
     await ativaLetra(nomeElement);
     sobrenomeElement.style.visibility = 'visible'; // Torna a palavra "Pereira" visível
     await ativaLetra(sobrenomeElement);
     complemento.style.visibility = 'visible';
     await ativaLetra(complemento); 
+    button.style.visibility = 'visible';
 
 
     console.log("Nome completo concluído.");

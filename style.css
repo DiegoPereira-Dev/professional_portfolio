@@ -11,6 +11,23 @@ body{
     width: 100%;
     background-color: #191919;
 }
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding:10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    /* background-color: ; --> definir uma cor de fundo para o botão*/
+    border:0 ;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #7d7d7d;
+}
 
 /* Estilo do cabeçalho */
 
@@ -22,9 +39,6 @@ body{
 
 header{
     padding: 40px 4%;
-    position: fixed;
-    left: 0;
-    right: 0;
     background-color:#191919 ;
 }
 
@@ -68,7 +82,7 @@ header .btn-contato button{
 }
 
 header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px #ff0000;
+    box-shadow: 0px 0px 8px #7d7d7d;
 }
 
 .navegacao span{
@@ -82,102 +96,67 @@ header .btn-contato button:hover{
     /* transition: border-bottom 1s, color 1s, margin-left 1s, margin-right 1s; */
 }
 
-
 /* fim de nevegação */
 
-.caixa-img {
-    display: flex;
-    justify-content: right;
-    padding-top: 50px;
-    padding-right: 50px;
-    margin-top: 20px;
+/* Estilo do topo do site */
+.topo-do-site {
+    padding: 40px 4%;
 }
-#avatar {
-    background-color: transparent;
-    border-radius: 100%;
-    box-shadow: 10px 0px 10px red;
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
 }
 
-
-@keyframes minhaAnimacao {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-} 
-
-.meu-nome {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-
-}
-
-.meu-nome h1 {
+.topo-do-site h1 {
     color: white;
     font-size: 65px;
+    
 }
-
 .pereira {
     color: red;
     display: inline-block;
     visibility: hidden;
 }
 
-.digitando2 {
+.animation_2 {
     color: white;
     font-size: 25px;
-    display: inline-block;
+    visibility: hidden;
+    padding-bottom: 20px;
+    padding-left: 0;
+}
+
+.btn-contato .btn-topo-do-site{
     visibility: hidden;
 }
-
-section img {
-    height: 300px;
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+.avatar{
+    height: 280px;
+    width: 480px;
     border-radius: 50px;
-    border: 1px solid red;
-    margin-right: 50px;
+    box-shadow: 3px 0px 3px #ff0000;
 }
 
-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 20%;
-    background-color: #000000;
-}
 
-section div h2 {
-    color: white;
-    font-size: 76px;
-}
+@keyframes flutuar{
+    0% {
+        top: 0;
+    }
 
-section div p {
-    color: rgba(248, 248, 248, 0.479);
-    font-size: 25px;
-    margin-top: 15px;
-    margin-bottom: 40px;
-}
+    100% {
+        top: 30px;
+    }
+} 
 
-section div button {
-    width: 150px;
-    height: 35px;
-    border-radius: 100px;
-    background-color: red;
-    border: none;
-    color: white;
-    font-size: 16px;
-}
+/* estilo de .sobre-mim */
 
-section div button:hover {
-    background-color: #000000;
-    border: 3px solid red;
-    transition: 0.5s;
-    cursor: pointer;
-}
 
+
+/* estilos de projetos */
 .projetos {
     background-color: #191919;
     padding-bottom: 50px;
