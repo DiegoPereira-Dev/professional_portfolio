@@ -23,10 +23,10 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Ínicio</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre mim</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#inicio">Ínicio</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
             <div class="btn-contato">
@@ -38,7 +38,7 @@
     </header><!-- navegação -->
 
     <main>
-        <section class="topo-do-site">
+        <section class="topo-do-site" id="inicio">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
@@ -62,29 +62,32 @@
             </div><!-- interface -->
         </section><!-- topo do site -->
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
             <div class="interface">
-                <h2 class="titulo">MINHAS <span>ESPECIALIADADES</span></h2>
+                <h2 class="titulo">LINGUAGENS <span>MAIS USADAS</span></h2>
                 <div class="flex">
                     <div class="especialidades-box">
                         <i class="bi bi-filetype-css"></i>
                         <h3>CSS</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ut dolorem, ipsam cupiditate
-                            distinctio quas neque alias autem itaque molestiae.</p>
+                        <p>Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado
+                            diretamente nas tags HTML ou ficar contido dentro das tags 'style'.</p>
                     </div><!-- especialidades box -->
 
                     <div class="especialidades-box">
                         <i class="bi bi-filetype-js"></i>
-                        <h3>Javascript</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ut dolorem, ipsam cupiditate
-                            distinctio quas neque alias autem itaque molestiae.</p>
+                        <h3>Javascript básico</h3>
+                        <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível
+                            com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma
+                            das três principais tecnologias da World Wide Web.</p>
                     </div><!-- especialidades box -->
 
                     <div class="especialidades-box">
-                        <i class="bi bi-filetype-jsx"></i>
-                        <h3>React</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ut dolorem, ipsam cupiditate
-                            distinctio quas neque alias autem itaque molestiae.</p>
+                        <i class="bi bi-filetype-html"></i>
+                        <h3>HTML</h3>
+                        <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML
+                            podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões
+                            HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo
+                            baseado em tempo.</p>
                     </div><!-- especialidades box -->
 
 
@@ -92,40 +95,66 @@
             </div><!-- interface -->
         </section><!-- especialidades -->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre-mim">
             <section class="interface">
                 <div class="flex">
                     <div class="img-sobre">
-                        <img src="img/homem_sorrindo.jpeg" alt="">
+                        <img src="img/Avatar4-ezgif.com-video-to-gif-converter.gif" alt="">
                     </div>
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span>SOU DIEGO PEREIRA</span></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eaque labore ut
-                            aspernatur nisi repudiandae aut voluptate enim? Reiciendis, placeat!</p>
+                        <p>Sou desenvolvedor web front-end junior, sou do de Campinas do piauí</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eaque labore ut
                             aspernatur nisi repudiandae aut voluptate enim? Reiciendis, placeat!</p>
 
-                            <div class="btn-social">
-                               <a href="#">
-                                    <button>
-                                        <i class="bi bi-github"></i>
-                                    </button>
-                                </a>
-                               <a href="#">
-                                    <button>
-                                        <i class="bi bi-linkedin"></i>
-                                    </button>
-                               </a>
-                               <a href="#">
-                                    <button>
-                                        <i class="bi bi-instagram"></i>
-                                    </button>
-                               </a>
-                            </div>
+                        <div class="btn-social">
+                            <a href="https://github.com/DiegoPereira-Dev">
+                                <button>
+                                    <i class="bi bi-github"></i>
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button>
+                                    <i class="bi bi-linkedin"></i>
+                                </button>
+                            </a>
+                            <a href="https://www.instagram.com/pereiradiego_09?igsh=YXZ0bWhjbXBzYWds">
+                                <button>
+                                    <i class="bi bi-instagram"></i>
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section><!-- interface -->
         </section><!-- sobre -->
+
+        <section class="portifolio">
+            <div class="interface">
+                <h2 class="titulo">MEUS <span>PROJETOS</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(img/4b7b7c7d-a840-427a-8699-6100b9c2b7b9.png);">
+                        <div class="overlay">
+                            Cafeteria
+                        </div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(img/4b7b7c7d-a840-427a-8699-6100b9c2b7b9.png);">
+                        <div class="overlay">
+                            Projeto 2
+                        </div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(img/4b7b7c7d-a840-427a-8699-6100b9c2b7b9.png);">
+                        <div class="overlay">
+                            projeto 3
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section><!-- portifolio -->
+
     </main>
 
     <script src="script.js"></script>

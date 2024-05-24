@@ -200,14 +200,15 @@ section.especialidades .flex{
 }
 
 
-/* estilos de projetos */
+/* estilos de sobre mim */
 section.sobre{
     padding: 40px 4%;
     margin-top: 40px;
 }
 
 .img-sobre img{
-    height: 400px;
+    height: 500px;
+    width: 500px;
     border-radius: 20px;
 }
 
@@ -248,11 +249,58 @@ section.sobre .flex{
     margin: 0 5px;
 }
 
-.sobre .txt-sobre .btn-social button{
-
-}
-
 .sobre .txt-sobre .btn-social a{
     text-decoration: none;
     list-style: none;
+}
+
+/* estilo de meus projetos */
+
+section.portifolio{
+    padding: 80 4%;
+    box-shadow: 0 0 50px 10px #ffffff73;
+}
+
+section.portifolio .flex{
+   justify-content: space-around;
+   margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    cursor: pointer;
+    border-radius: 40px;
+    border: 1px solid #7d7d7d;
+    box-shadow: 0 0 2px 2px #ffffff73;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+    transition: 5s;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: #000000b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+}
+
+.overlay:hover{
+    opacity: 1;
+    transition: 1.5s;
 }
