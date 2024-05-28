@@ -238,7 +238,7 @@ section.sobre .flex{
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button{
+.btn-social button{
     color: #fff;
     width: 60px;
     height: 60px;
@@ -250,7 +250,7 @@ section.sobre .flex{
     margin: 0 5px;
 }
 
-.sobre .txt-sobre .btn-social a{
+ .btn-social a {
     text-decoration: none;
     list-style: none;
 }
@@ -354,3 +354,32 @@ form .btn-enviar input[type=submit]{
     cursor: pointer;
     transition:.2s;
 }
+
+/* estilo d rodapé */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 50px 10px #ffffff73;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #ff0000;
+}
+
+footer .line-footer p i{
+    color: #ff0000;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+    padding-left: 10px;
+}   
