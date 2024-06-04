@@ -185,10 +185,10 @@
             <div class="interface">
                 <h2 class="titulo">FALE <span>COMIGO</span></h2>
 
-                <form action="">
-                    <input type="text" placeholder="Seu nome" required>
-                    <input type="email" placeholder="Seu email" required>
-                    <input type="email" placeholder="Seu celular">
+                <form method="post" action="form.php">
+                    <input type="text" placeholder="Seu nome" name="nome" required>
+                    <input type="email" placeholder="Seu email" name="email" required>
+                    <input type="tel" placeholder="Seu celular" name="telefone">
                     <textarea placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar">
                         <input type="submit" value="Enviar">
